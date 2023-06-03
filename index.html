@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirza Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        color: white;
+        /* background-color: black; */
+        /* color: aliceblue; */
+        background: url('img/bg.jpg')  no-repeat center center/cover;
+        /* height: 300px; */
+        font-family: 'Pangolin', cursive;
+        /* opacity: ; */
+        /* position: sticky; */
+        top: 0px;
+
+    }
+
+    .left {
+        /* border: 2px solid rebeccapurple; */
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+
+    .left img {
+        display: block;
+        margin: 6% auto;
+        width: 36px;
+        height: 46px;
+
+    }
+
+    .left div {
+        line-height: 35px;
+        text-align: center;
+    }
+
+
+    .mid {
+
+        /* border: 2px solid red; */
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+        
+        /* flex-direction: row; */
+        /* width: 26%; */
+        margin: 20px auto;
+        font-size: 17px;
+        color: black;
+        
+
+
+    }
+
+
+    .right {
+        /* border: 2px solid green; */
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 12px 6px;
+        background-color: rgb(148, 139, 139);
+        border-radius: 12px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: brown;
+    }
+
+    .btn {
+
+        background-color: black;
+        border-color: white;
+        color: white;
+        padding: 8px;
+        /* border: 1.5px solid rosybrown; */
+        border-radius: 10px;
+        font-family: 'Pangolin', cursive;
+        display: inline-block;
+        margin: 4px 6px;
+
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(88, 81, 72);
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .gform {
+        margin: 3px;
+        padding: 10px;
+        border: 1.5px solid white;
+        border-radius: 10px;
+        display: block;
+        width: 35%;
+        margin: 60px 60px;
+    }
+
+    .gform h2{
+
+        text-align: center;
+        font-size: 35px;
+        line-height: 0px;
+        color: rgb(209, 209, 194);
+        background-color: rgb(100, 98, 95);
+    }
+
+    .formgroup input {
+        border-radius: 5px;
+        text-align: center;
+        margin: 5px auto;
+        padding: 7px;
+        display: block;
+        width: 65%;
+        font-size: 15px;
+
+    }
+
+    .gform button {
+        text-align: center;
+        width: 65%;
+        margin: 15px auto;
+        display: block;
+        background-color: rgb(110, 106, 100);
+    }
+</style>
+
+<body>
+    <header class="container">
+        <div class="left">
+            <img src="img/lg.png" alt="">
+            Mirza Fitness
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+
+
+    </header>
+
+    <div class="gform">
+        <h2>Join the best Gym in Delhi</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" placeholder="Enter your Name">
+                <input type="text" placeholder="Enter your Age">
+                <input type="text" placeholder="Enter your Locality">
+                <input type="text" placeholder="Enter your Gender">
+                <input type="text" placeholder="Enter your Email ID">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
